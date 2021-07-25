@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 
 #image input
-img = cv2.imread("trialimage.jpg")
+img = cv2.imread("OriginalImage.jpg")
 
 #defining edges
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -19,3 +19,5 @@ cv2.imshow("After change: ", cartoon)
 
 #keeping windows open
 cv2.waitKey(0)
+
+cv2.imwrite("FinalImage.jpg", cartoon)
